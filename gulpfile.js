@@ -19,5 +19,5 @@ gulp.task('sass', function () {
 
 gulp.task('watch', ['browser-sync'], function () {
     gulp.watch('scss/*.scss', ['sass']).on('change',bs.reload);
-    gulp.watch('*.html').on('change', bs.reload);
+    gulp.watch('public/*.html').on('change', bs.reload);
 });
